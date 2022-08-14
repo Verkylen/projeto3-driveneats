@@ -68,6 +68,23 @@ function CalculationCost() {
         const Value2 = Number(Structure2.querySelector('h6').innerHTML.slice(3).replace(',', '.'));
         const Value3 = Number(Structure3.querySelector('h6').innerHTML.slice(3).replace(',', '.'));
     
-        const Cost = Value1 + Value2 + Value3;
+        const Cost = (Value1 + Value2 + Value3).toFixed(2);
+
+        const Dish = Structure1.querySelector('h4').innerHTML;
+        const Drink = Structure2.querySelector('h4').innerHTML;
+        const Dessert = Structure3.querySelector('h4').innerHTML;
+
+        const Message = encodeURIComponent(
+`Olá, gostaria de fazer o pedido:
+- Prato: ${Dish}
+- Bebida: ${Drink}
+- Sobremesa: ${Dessert}
+Total: R$ ${Cost}`);
+
+        console.log(Cost);
+        
+        const Link = `https://wa.me/5571987101121?text=${Message}`;
+
+        window.open(Link);
     }
 }
