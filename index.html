@@ -24,7 +24,8 @@
         </h3>
 
         <div class="Selection">
-            <div class="Caixa1">
+            <!-- <div onclick="Selected('.Selection div:nth-child(1)')"> -->
+            <div onclick="Selected1(this)">
                 <img src="/images/prato1.jpg"/>
                 <h4>
                     Frango gourmet
@@ -35,9 +36,10 @@
                 <h6>
                     R$ 89,90
                 </h6>
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <ion-icon class="Ocult" name="checkmark-circle"></ion-icon>
             </div>
-            <div>
+            <!-- <div onclick="Selected('.Selection div:nth-child(2)')"> -->
+            <div onclick="Selected1(this)">
                 <img src="/images/prato2.jpg"/>
                 <h4>
                     PF da esquina
@@ -48,9 +50,9 @@
                 <h6>
                     R$ 8,00
                 </h6>
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <ion-icon class="Ocult" name="checkmark-circle"></ion-icon>
             </div>
-            <div>
+            <div onclick="Selected1(this)">
                 <img src="/images/prato3.jpg"/>
                 <h4>
                     Bisteca vegana
@@ -61,7 +63,7 @@
                 <h6>
                     R$ 49,99
                 </h6>
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <ion-icon class="Ocult" name="checkmark-circle"></ion-icon>
             </div>
         </div>
 
@@ -70,7 +72,7 @@
         </h3>
 
         <div class="Selection">
-            <div>
+            <div onclick="Selected2(this)">
                 <img src="/images/bebida1.jpg">
                 <h4>
                     Refri sem gás
@@ -81,9 +83,9 @@
                 <h6>
                     R$ 8,99
                 </h6>
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <ion-icon class="Ocult" name="checkmark-circle"></ion-icon>
             </div>
-            <div>
+            <div onclick="Selected2(this)">
                 <img src="/images/bebida2.jpg">
                 <h4>
                     Sonífero
@@ -94,9 +96,9 @@
                 <h6>
                     R$ 9,99
                 </h6>
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <ion-icon class="Ocult" name="checkmark-circle"></ion-icon>
             </div>
-            <div>
+            <div onclick="Selected2(this)">
                 <img src="/images/bebida3.jpg">
                 <h4>
                     Suco artificial
@@ -107,7 +109,7 @@
                 <h6>
                     R$ 3,90
                 </h6>
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <ion-icon class="Ocult" name="checkmark-circle"></ion-icon>
             </div>
         </div>
 
@@ -116,7 +118,7 @@
         </h3>
 
         <div class="Selection">
-            <div>
+            <div onclick="Selected3(this)">
                 <img src="/images/sobremesa1.jpg">
                 <h4>
                     Torta de frango
@@ -127,9 +129,9 @@
                 <h6>
                     R$ 4,90
                 </h6>
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <ion-icon class="Ocult" name="checkmark-circle"></ion-icon>
             </div>
-            <div>
+            <div onclick="Selected3(this)">
                 <img src="/images/sobremesa2.jpg">
                 <h4>
                     Milkshake morango
@@ -140,9 +142,9 @@
                 <h6>
                     R$ 5,90
                 </h6>
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <ion-icon class="Ocult" name="checkmark-circle"></ion-icon>
             </div>
-            <div>
+            <div onclick="Selected3(this)">
                 <img src="/images/sobremesa3.jpg">
                 <h4>
                     Torta de limão
@@ -153,7 +155,7 @@
                 <h6>
                     R$ 4,40
                 </h6>
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <ion-icon class="Ocult" name="checkmark-circle"></ion-icon>
             </div>
         </div>
     </section>
@@ -165,6 +167,10 @@
             </span>
         </button>
     </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <script src="script.js"></script>
 </body>
